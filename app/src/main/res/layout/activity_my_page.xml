@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.somaseven.hweach.MyPageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="E-MAIL: "/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/myPage_edit_email"
+            android:layout_weight="6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="NAME: "/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/myPage_edit_name"
+            android:layout_weight="6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="PHONE : "/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/myPage_edit_phoneNumber"
+            android:layout_weight="6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Introduction"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text=""
+            android:gravity="left"
+            android:id="@+id/myPage_edit_intro"
+            android:background="@drawable/border2"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="4dp"
+            android:text="Modify"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/myPage_btn_modify"
+            android:background="#1E88E5" />
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="5dp"
+            android:text="튜터링 요청 현황"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/myPage_btn_tutoring"
+            android:background="#1E88E5" />
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="4dp"
+            android:text="Cancel"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/myPage_btn_cancel"
+            android:background="#FFA69E" />
+    </LinearLayout>
+</LinearLayout>
+

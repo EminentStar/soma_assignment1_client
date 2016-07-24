@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hweach</string>
+
+    <string name="facebook_app_id">642913955857205</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">e30d68fb24fa00d555e450a1d8527f7f</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="fb_login_protocol_scheme">fb642913955857205</string>
+
+    <string name="registering_message_ready">InstanceID 토큰 가져오기</string>
+    <string name="registering_message_generating">InstanceID 토큰 생성중...</string>
+    <string name="registering_message_complete">완료!</string>
+</resources>

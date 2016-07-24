@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="7">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/border2"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="TITLE: "
+            android:background="@drawable/border2"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/writePage_edit_title"
+            android:layout_weight="6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:background="@drawable/border2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="CONTENTS"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="left"
+            android:id="@+id/writePage_edit_content"
+            android:layout_weight="4"
+            android:background="@drawable/border2"/>
+    </LinearLayout>
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="10dp"
+        android:text="등록"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/writePage_btn_register"
+        android:background="#1E88E5" />
+
+</LinearLayout>
